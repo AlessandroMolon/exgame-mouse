@@ -13,6 +13,9 @@ export type User = {
   id: string;
   name?: string;
   currentSubscriptionId?: string;
-  data: Record<SubscriptionId, Responses>;
-  actions: SubscriptionAction[];
+  data?: Record<SubscriptionId, Responses>;
+  actions?: SubscriptionAction[];
+  username: string;
+  email: string;
+  password: string;
 }
